@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#28594b">
+  <meta name="description" content="Twoja przestrzeń nauki. Materiały, fiszki i codzienne powtórki.">
+  <title>Fizjo — Twoja przestrzeń nauki</title>
+  <link rel="icon" href="./favicon-DXeoaRLp.svg" type="image/svg+xml">
+  <script type="module" crossorigin src="./index-CEDe2j9H.js"></script>
+  <link rel="stylesheet" crossorigin href="./index-B75Jyl1O.css">
+</head>
+<body>
+  <div class="auth-shell" id="auth-gate"><p class="panel" role="status">Wczytywanie aplikacji…</p></div>
+  <div id="application" hidden>
+    <a class="skip" href="#main">Przejdź do treści</a>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-symbol">f<span>✳</span></span><span>fizjo<span class="brand-dot">.</span></span></a>
+      <div class="workspace"><span class="workspace-icon">F</span><div><strong>Moja przestrzeń</strong><small>Plan nauki</small></div></div>
+      <nav aria-label="Główna nawigacja" id="navigation"></nav>
+      <button class="profile" data-action="settings"><span class="avatar" id="avatar">T</span><span><strong id="profile-name">Twój profil</strong><small>Ustawienia nauki</small></span><span>⚙</span></button>
+    </aside>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="button secondary" id="menu-toggle" aria-controls="sidebar" aria-expanded="false">☰ Menu</button>
+        <span class="breadcrumb">Moja przestrzeń <span>/</span> <strong id="breadcrumb-current">Plan na dziś</strong></span>
+        <div class="top-actions">
+          <button class="button secondary" data-theme-toggle>Ciemny motyw</button>
+          <button class="button secondary" id="logout">Wyloguj</button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="sync-footer">
+        <span id="sync-status" role="status"></span>
+        <button class="button secondary" id="retry-save" hidden>Ponów zapis</button>
+      </footer>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
